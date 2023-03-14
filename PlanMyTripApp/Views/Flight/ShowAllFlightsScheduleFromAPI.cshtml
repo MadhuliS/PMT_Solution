@@ -1,0 +1,121 @@
+﻿@model IEnumerable<PlanMyTripDAL.FlightSchedule>
+
+@{
+    ViewBag.Title = "ShowAllFlightsScheduleFromAPI";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+      $('.datetimepicker').datepicker({
+        dateFormat: "dd-mm-yy",
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "-60:+0"
+      });
+    });
+</script>
+<h2>ShowAllFlightsScheduleFromAPI</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartureTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArrivalTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Airport.AirportName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Airport1.AirportName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Airport2.AirportName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Airport3.AirportName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Airport4.AirportName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Airport5.AirportName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Airport6.AirportName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Airport7.AirportName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Flight.FlightName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Flight1.FlightName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Flight2.FlightName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Flight3.FlightName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartureTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArrivalTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Airport.AirportName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Airport1.AirportName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Airport2.AirportName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Airport3.AirportName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Airport4.AirportName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Airport5.AirportName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Airport6.AirportName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Airport7.AirportName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Flight.FlightName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Flight1.FlightName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Flight2.FlightName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Flight3.FlightName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

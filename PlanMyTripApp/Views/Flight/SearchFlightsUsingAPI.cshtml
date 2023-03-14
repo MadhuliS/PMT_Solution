@@ -1,0 +1,35 @@
+﻿@model PlanMyTripApp.Models.FlightSchedule
+
+@{
+  ViewBag.Title = "SearchFlightsUsingAPI";
+}
+
+<h2>SearchFlightsUsingAPI</h2>
+
+@using (Html.BeginForm())
+{
+
+
+  <div class="form-horizontal">
+
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+      @Html.LabelFor(model => model.fList, htmlAttributes: new { @class = "control-label col-md-2" })
+      <div class="col-md-10">
+        @Html.DropDownListFor(model => model.fList, new SelectList(Model.fList, "Origin", "Origin"), new { @class = "form-control",@id="ddlOrigin" })
+        @Html.ValidationMessageFor(model => model.Origin, "", new { @class = "text-danger" })
+      
+        @Html.DropDownListFor(model => model.fList, new SelectList(Model.fList, "Destination", "Destination"), new { @class = "form-control", @id = "ddlDest" })
+        @Html.ValidationMessageFor(model => model.Destination, "", new { @class = "text-danger" })
+     
+        @Html.TextBox("txtTravelDate",null, htmlAttributes: new { @class = "datetimepicker" })
+        @Html.ValidationMessageFor(model => model.DepartureTime, "", new { @class = "text-danger" })
+      </div>
+    </div>
+
+    <span>
+      <input type="submit" class="btn btn-primary" value="Search Flights" />
+    </span>
+  </div>
+}

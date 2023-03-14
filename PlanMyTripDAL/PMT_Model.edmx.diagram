@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="27c0b00e0f7d45f2aa73e8e36bea4410" Name="Diagram1">
+        <EntityTypeShape EntityType="PlanMyTripDBModel.Airport" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlanMyTripDBModel.BookingDetail" Width="1.5" PointX="10.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlanMyTripDBModel.Flight" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlanMyTripDBModel.FlightSchedule" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlanMyTripDBModel.Hotel" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlanMyTripDBModel.Itenary" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlanMyTripDBModel.Passenger" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlanMyTripDBModel.Role" Width="1.5" PointX="10" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlanMyTripDBModel.RoomDetail" Width="1.5" PointX="8" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlanMyTripDBModel.User" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Desti__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Desti__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Desti__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Desti__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Origi__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Origi__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Origi__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Origi__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__BookingDe__Roomi__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__BookingDe__Roomi__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__BookingDe__Roomi__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__BookingDe__Roomi__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Fligh__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Fligh__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Fligh__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__FlightSch__Fligh__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Itenary__Schedul__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Itenary__Schedul__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Itenary__Schedul__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Itenary__Schedul__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__RoomDetai__Hotel__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__RoomDetai__Hotel__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__RoomDetai__Hotel__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__RoomDetai__Hotel__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Itenary__Passeng__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Itenary__Passeng__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Itenary__Passeng__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Itenary__Passeng__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Roles__UserId__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Roles__UserId__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Roles__UserId__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="PlanMyTripDBModel.FK__Roles__UserId__5070F446" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
